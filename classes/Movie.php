@@ -15,9 +15,9 @@ class Movie
      */
     function __construct($_args)
     {
-        $this->args["titolo"] = isset($_args["titolo"]) ? $_args["titolo"] : NULL;
-        $this->args["descrizione"] = isset($_args["descrizione"]) ? $_args["descrizione"] : NULL;
-        $this->args["punteggio"] = isset($_args["punteggio"]) ? $_args["punteggio"] : NULL;
+        $this->args["titolo"] = isset($_args["titolo"]) ? strval($_args["titolo"])  : NULL;
+        $this->args["descrizione"] = isset($_args["descrizione"]) ? strval($_args["descrizione"]) : NULL;
+        $this->args["punteggio"] = isset($_args["punteggio"]) ? intval($_args["punteggio"]) : NULL;
     }
 
     /**
