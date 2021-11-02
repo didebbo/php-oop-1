@@ -20,31 +20,52 @@ class Movie
         $this->args["punteggio"] = isset($_args["punteggio"]) ? $_args["punteggio"] : NULL;
     }
 
-    function setTitolo($_titolo)
+    /**
+     * setTitolo($_titolo)
+     * @param string $_titolo
+     */
+    function setTitolo(string $_titolo)
     {
         $this->args["titolo"] = $_titolo;
     }
 
+    /**
+     * getTitolo()
+     */
     function getTitolo()
     {
         return $this->args["titolo"];
     }
 
-    function setDescrizione($_descrizione)
+    /**
+     * setDescrizione($_descrizione)
+     * @param string $_titolo
+     */
+    function setDescrizione(string $_descrizione)
     {
         $this->args["descrizione"] = $_descrizione;
     }
 
+    /**
+     * getDescrizione()
+     */
     function getDescrizione()
     {
         return $this->args["descrizione"];
     }
 
-    function setPunteggio($_punteggio)
+    /**
+     * setPunteggio($_punteggio)
+     * @param int $_punteggio
+     */
+    function setPunteggio(int $_punteggio)
     {
         $this->args["punteggio"] = $_punteggio;
     }
 
+    /**
+     * getPunteggio()
+     */
     function getPunteggio()
     {
         return $this->args["punteggio"];
